@@ -1,0 +1,957 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.page-bg-container{
+    height: 400vh;
+}
+.navbar{
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 14px 2px #eeeeee;
+    padding: 20px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.company-logo{
+    width: 63px;
+    height: 64px;
+}
+.company-name{
+    color: #2f2f2f;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+.heading-part{
+    color: #138ED1;
+}
+.navbar-lists{
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-item{
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-right: 15px;
+    font-weight: 400;
+}
+.selected{
+    color: #138ED1;
+    font-size: 18px;
+}
+.btn-patients-hospital{
+    background: #00486C;
+    height: 35px;
+    width: 113px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.btn-play-store{
+    width: 115px;
+    height: 35px;
+    background-color: #333333;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.play-icon{
+    width: 21px;
+    height: 20.59px;
+}
+.btn-menu{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: none;
+}
+.menu-img{
+    width: 25px;
+    height: 25px;
+    color: #2F2F2F;
+}
+.background-container{
+    background-image: url('https://res.cloudinary.com/shafi-tech/image/upload/v1695286545/BG_4_nnkaax.png');
+    height: 85%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: unset;
+}
+.section-one{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.form-offer-discount{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.user-form{
+    width: 470px;
+    height: 420px;
+    border-radius: 34px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 14px 2px #dbdbdb;
+}
+.form-caption{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #2f2f2f;
+    padding-bottom: 20px;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.label-input{
+    margin-right: 20px;
+    color: #138ED1;
+}
+.input-icon{
+    width: 26.83px;
+    height: 24.82px;
+}
+.user-input{
+    width: 299px;
+    height: 47px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E3E3E3;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #2f2f2f;
+    outline: none;
+    padding: 10px;
+    line-height: 10px;
+}
+.check-box{
+    width: 16.82px;
+    height: 16.82px;
+}
+.label-check{
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #2f2f2f;
+    padding-left: 10px;
+}
+.btn-proceed{
+    width: 236px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background-color: #138ED1;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 25px;
+}
+.offer-discount-lg{
+    width: 600px;
+    height: 70px;
+    background-color: #138ED1;
+    border-radius: 35px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offer-lg{
+    width: 80%;
+    background-color: #00486C;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.discount-lg-container{
+    width: 20%;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px;
+}
+.cancel-price{
+    text-decoration: line-through;
+}
+.offer-discount-small{
+    display: flex;
+    width: 312px;
+    height: 88px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.offer{
+    width: 100%;
+    height: 44px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #00486C;
+    margin-bottom: 10px;
+}
+.heading{
+    color: #138ED1;
+}
+.discount{
+    width: 204px;
+    height: 34px;
+    border-radius: 35px;
+    background-color: #00A6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.lab-tests-container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.lab-tests-heading img{
+    width: 50%;
+}
+.lab-tests-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section-heading{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: sans-serif;
+}
+.special-heading{
+    color: #138ED1;
+}
+.lab-tests-cards{
+    background-image: url('https://res.cloudinary.com/shafi-tech/image/upload/v1695292346/Component_1_q50ttb.png');
+    width: 100%;
+    position: relative;
+    height: 410px;
+}
+.lab-card{
+    width: 166px;
+    padding: 10px;
+    gap: 10px;
+    height: 89px;
+    border-radius: 13px;
+    background-color: #6e6e6e99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #333333;
+}
+.lab-card img{
+    width: 45px;
+    height: 45px;
+}
+.first-card{
+    position: absolute;
+    left: 10%;
+    top: 8%;
+}
+.middle-card{
+    position: absolute;
+    top: 40%;
+    left: -15%;
+}
+.last-card{
+    position: absolute;
+    top: 80%;
+}
+.heading-small{
+    width: 90%;
+    max-width: 300px;
+    padding-bottom: 20px;
+    height: 80px;
+}
+.accreditation-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.accrediate-card{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+}
+.accrediate-card img{
+    width: 60px;
+    height: 66px;
+}
+.expanding-cards-container{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1100px;
+    min-width: 312px;
+    height: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.expanding-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expanding-header img{
+    align-self: flex-end;
+    width: 55%;
+}
+.expanding-cards-list{
+    padding-left: 0;
+    list-style-type: none;
+    width: 100%;
+    min-width: 312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.expanding-card{
+    width: 180px;
+    height: 80px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #138ED1;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.packages-container{
+    height: 564px;
+    width: 1294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.packages-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.packages-header img{
+    width: 70%;
+    align-self: flex-end;
+}
+.package-caption{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #6E6E6E;
+}
+.packages-cards-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    list-style-type: none;
+    gap: 20px;
+    position: relative;
+}
+.package-card{
+    width: 353px;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14px 2px #00000025;
+}
+.package-card-heading{
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #2f2f2f;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.rating-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.rating{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2f2f;
+}
+.number-tests{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2f2f;
+    padding-bottom: 10px;
+}
+.review{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #6e6e6e;
+}
+.package-cancel-price{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6E6E6E;
+}
+.final-price{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #6e6e6e;
+}
+.btn-book-now{
+    background-color:#008DD9;
+    width: 264px;
+    height: 43px;
+    border: none;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    align-self: center;
+}
+.arrow-container{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14px 2px #00000025;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 90%;
+}
+.see-all{
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.why-choose-us-section{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.why-choose-us-header{
+    position: relative;
+    width: 404px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.why-choose-us-header img{
+    position: absolute;
+    top: 90%;
+    width: 30%;
+}
+.reasons-cards-list{
+    align-self: flex-start;
+    padding: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+}
+.reason-card{
+    width: 373px;
+    height: 226px;
+    border-radius: 33px;
+    padding: 30px;
+    box-shadow: 0px 0px 14px 2px #00000025;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.reason-card h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2f2f2f;
+}
+.reason-card p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2f2f2f;
+    padding-top: 10px;
+}
+.reason-img{
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 14px 2px #00000025;
+}
+.third-card{
+    top: 20px;
+}
+.second-card{
+    top: 50px;
+    left: 10px;
+}
+.fourth-card{
+    top: 60px;
+}
+.reason-cards-list-mobile{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.reason-card-mobile{
+    background-color: #ffffff;
+    width: 350px;
+    height: 77px;
+    border-radius: 38.50px;
+    box-shadow: 0px 0px 14px 2px #00000025;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+    color: #2F2F2F;
+}
+.reason-card-mobile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.open{
+    height: 160px;
+}
+.open-card{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14px 2px #00000025;
+    width: 350px;
+    border-radius: 38.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.open{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.open img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.card-title{
+    font-family: sans-serif;
+    color: #2f2f2f;
+    font-weight: bold;
+    font-size: 15px;
+}
+.hide-content{
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #2F2F2F;
+}
+.footer-container{
+    margin-top: 35px;
+    padding: 20px;
+    width: 100%;
+    height: 18%;
+    background-color: #1F1F1F;
+}
+.footer-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.footer-call-section{
+    width: 30%;
+}
+.footer-call-section img{
+    width: 137px;
+    height: 137px;
+}
+.footer-caption{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 30px;
+}
+.call-input-container{
+    width: 471px;
+    height: 88px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+.std{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.call-input{
+    width: 70%;
+    background-color: transparent;
+    height: 88px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.btn-call{
+    background-color: #00A6FF;
+    width: 30%;
+    height: 88px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    outline: none;
+    border: none;
+}
+.footer-services-legal-container{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services-legal-talk-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    margin-right: 20px;
+    width: 30%;
+}
+.slt-heading{
+    font-family: sans-serif;
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #ffffff;
+}
+.slt-lists{
+    list-style-type: none;
+    padding-left: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.slt-lists li{
+    padding-bottom: 8px;
+}
+hr{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #FFFFFF;
+}
+.copy-right{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+@media (min-width: 992px){
+    .offer-discount-small{
+        display: none;
+    }
+    .heading-small{
+        display: none;
+    }
+    .see-all{
+        display: none;
+    }
+    .reason-cards-list-mobile{
+        display: none;
+    }
+}
+@media (max-width: 991px){
+    .slt-lists{
+        font-size: 15px;
+    }
+    .slt-heading{
+        font-size: 25px;
+    }
+    .footer-services-legal-container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .call-input-container{
+        display: none;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+    .footer-call-section{
+        width: 100%;
+    }
+    .reasons-cards-list{
+        display: none;
+    }
+    .why-choose-us-section{
+        height: 550px;
+    }
+    .packages-cards-list{
+        flex-direction: column;
+    }
+    .arrow-container{
+        display: none;
+    }
+    .btn-book-now{
+        width: 204px;
+        height: 40.75px;
+        font-size: 16px;
+    }
+    .package-card-heading{
+        font-size: 18px;
+    }
+    .rating{
+        font-size: 16px;
+    }
+    .review{
+        font-size: 12px;
+    }
+    .number-tests{
+        font-size: 16px;
+    }
+    .package-cancel-price{
+        font-size: 18px;
+    }
+    .package-card{
+        width: 312px;
+        height: 180px;
+    }
+    .packages-container{
+        width: 312px;
+        height: 800px;
+    }
+    .package-caption{
+        font-size: 12px;
+    }
+    .packages-header img{
+        width: 40%;
+        align-self: center;
+    }
+    .expanding-cards-container{
+        height: 334px;
+    }
+    .accrediate-card img{
+        width: 32px;
+        height: 34px;
+    }
+    .expanding-card{
+        font-size: 14px;
+        width: 140px;
+    }
+    .accreditation-container{
+        flex-direction: column;
+    }
+    .accrediate-card{
+        font-size: 16px;
+    }
+    .lab-tests-container{
+        display: none;
+    }
+    .section-one{
+        flex-direction: column;
+    }
+    .section-heading{
+        font-size: 24px;
+    }
+    .lab-tests-container{
+        width: 100%;
+    }
+    .expanding-header{
+        display: none;
+    }
+    .offer-discount-lg{
+        display: none;
+    }
+    .btn-proceed{
+        width: 156px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .label-check{
+        font-size: 8px;
+    }
+    .chek-box{
+        width: 10.71px;
+        height: 12.24px;
+    }
+    .packages-header img{
+       font-size: 25px; 
+    }
+    .user-input{
+        width: 204px;
+        height: 33px;
+    }
+    .form-caption{
+        font-size: 14px;
+    }
+    .input-icon{
+        width: 17.5px;
+        height: 16.54px;
+    }
+    .user-form{
+        width: 312px;
+        height: 299px;
+    }
+    .form-offer-discount{
+        width: 100%;
+    }
+    .navbar-lists{
+        display: none;
+    }
+    .section-one{
+        flex-direction: column;
+    }
+    .btn-container{
+        display: none;
+    }
+    .btn-play-store{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+    .background-container{
+        background-image: url('https://res.cloudinary.com/shafi-tech/image/upload/v1695286672/BG_5_vsv6xu.png');
+        height: 315vh;
+    }
+}
