@@ -104,7 +104,7 @@
 .background-container{
     background-image: url('https://res.cloudinary.com/shafi-tech/image/upload/v1695286545/BG_4_nnkaax.png');
     height: 350vh;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
